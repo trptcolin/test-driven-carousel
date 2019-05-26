@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselSlide renders correctly 1`] = `
+<figure>
+  <CarouselSlide__DefaultImg
+    imgHeight={500}
+    src="https://examples.com/image.png"
+  />
+  <figcaption>
+    <strong>
+      description
+    </strong>
+     
+    attribution
+  </figcaption>
+</figure>
+`;
+
+exports[`Img renders correctly 1`] = `
+.c0 {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+<CarouselSlide__DefaultImg
+  imgHeight={500}
+  src="https://example.com/default.jpg"
+>
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "CarouselSlide__DefaultImg-ds4ujd-0",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "object-fit:cover;width:100%;height:",
+            [Function],
+            ";",
+          ],
+        },
+        "displayName": "CarouselSlide__DefaultImg",
+        "render": [Function],
+        "styledComponentId": "CarouselSlide__DefaultImg-ds4ujd-0",
+        "target": "img",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    imgHeight={500}
+    src="https://example.com/default.jpg"
+  >
+    <img
+      className="c0"
+      src="https://example.com/default.jpg"
+    />
+  </StyledComponent>
+</CarouselSlide__DefaultImg>
+`;
