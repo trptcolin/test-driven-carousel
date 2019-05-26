@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ['eslint:recommended'],
+  plugins: ['react'],
+  extends: ['eslint:recommended', 'plugin:react/recommended'],
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -13,5 +14,10 @@ module.exports = {
   rules: {
     quotes: ['error', 'double', {avoidEscape: true}],
     'comma-dangle': ["error", "always-multiline"]
-  }
+  },
+  settings: {
+    react: {
+      version: '16.4.2',
+    },
+  },
 }
