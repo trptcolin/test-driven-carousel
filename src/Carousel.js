@@ -5,7 +5,7 @@ import CarouselSlide from "./CarouselSlide";
 
 class Carousel extends React.PureComponent {
   static propTypes = {
-    slides: PropTypes.arrayOf(PropTypes.share(CarouselSlide.propTypes))
+    slides: PropTypes.arrayOf(PropTypes.shape(CarouselSlide.propTypes))
       .isRequired,
   };
   state = {
